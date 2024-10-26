@@ -8,7 +8,7 @@
 <p>
     Nevertheless, most individual systems share a primary description with other individuals of the same system
     type, or model number.
-    The characteristics and capabilities of the <em>system type</em> will usually provide the key information
+    The characteristics and capabilities of the <em>system type</em> will often provide the key information
     about about
     a system involved in an execution.
     Traditionally this information would appear in a specification or <em>data-sheet</em> for a device type.
@@ -21,8 +21,8 @@
 <ul>
     <li>
         a generic system or system type is represented as an OWL Class, specifically as a sub-class of
-        <a href="#SOSASystem"><code>sosa:System</code></a> or one of its sub-classes
-        (<a href="#SOSAActuator"><code>sosa:Actuator</code></a>,
+        <a href="#SOSASystem"><code>sosa:System</code></a> (specifically: one of its sub-classes
+        <a href="#SOSAActuator"><code>sosa:Actuator</code></a>,
         <a href="#SOSASensor"><code>sosa:Sensor</code></a>,
         <a href="#SOSASampler"><code>sosa:Sampler</code></a>), while
     </li>
@@ -74,4 +74,7 @@
         Every temperature sensor has a range -40&mdash;60 &deg;C with an accuracy of 4.5 %.
     </li>
 </ul>
+<p>
+    <a href="./rdf/examples/IBS-TH2-PLUS.ttl">See this code snippet</a> for an illustration of how this may be described appears as RDF/RDFS/OWL.
+</p>
 </section>
