@@ -339,7 +339,6 @@ sosa:hasProperty
   rdfs:isDefinedBy sosa-common: .
 
 sosa:isFeatureOfInterestOf 
-  schema:rangeIncludes sosa:Sampler ;
   schema:rangeIncludes sosa:Sampling ;
   schema:rangeIncludes sosa:SamplingCollection ;
   rdfs:isDefinedBy sosa-common: .
@@ -407,12 +406,14 @@ sosa:Execution
 sosa:usedProcedure 
   schema:domainIncludes sosa:Sampling ;
   schema:domainIncludes sosa:SamplingCollection ;
-  schema:rangeIncludes sosa:Procedure ;
   rdfs:isDefinedBy sosa-common: .
 
 sosa:startTime 
   schema:domainIncludes sosa:Sampling ;
   schema:domainIncludes sosa:SamplingCollection ;
+  rdfs:isDefinedBy sosa-common: .
+
+sosa:endTime 
   rdfs:isDefinedBy sosa-common: .
 
 sosa:resultTime 
@@ -430,16 +431,13 @@ sosa:phenomenonOccurred
   rdfs:isDefinedBy sosa-common: .
 
 sosa:hasFeatureOfInterest 
-  schema:domainIncludes sosa:Sampler ;
   schema:domainIncludes sosa:Sampling ;
   schema:domainIncludes sosa:SamplingCollection ;
-  schema:rangeIncludes sosa:Sample ;
   rdfs:isDefinedBy sosa-common: .
 
 sosa:hasUltimateFeatureOfInterest 
   schema:domainIncludes sosa:Sampling ;
   schema:domainIncludes sosa:SamplingCollection ;
-  schema:rangeIncludes sosa:Sample ;
   rdfs:isDefinedBy sosa-common: .
 
 sosa:hasInputValue 
