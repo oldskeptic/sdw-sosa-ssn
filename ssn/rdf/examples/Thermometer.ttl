@@ -38,10 +38,6 @@ sensor:Mercury-in-glass-thermometer
   rdfs:label "A specific type of temperature sensor" ;
   rdfs:subClassOf sensor:TemperatureSensor ;
 .
-sensor:Special-Mercury-in-glass-thermometer
-  a owl:Class ;
-  rdfs:subClassOf sensor:Mercury-in-glass-thermometer ;
-.
 sensor:TemperatureSensor
   a owl:Class ;
   rdfs:label "A generic temperature sensor" ;
