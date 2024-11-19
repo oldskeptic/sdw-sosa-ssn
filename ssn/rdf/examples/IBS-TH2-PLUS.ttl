@@ -2,6 +2,7 @@
 @prefix ex: <https://example.org/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix qk: <http://qudt.org/vocab/quantitykind/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
@@ -53,7 +54,7 @@ sensor:IBS-TH2-Plus-H
   rdfs:subClassOf sosa:Sensor ;
   rdfs:subClassOf [
       a owl:Restriction ;
-      owl:hasValue <http://qudt.org/vocab/quantitykind/RelativeHumidity> ;
+      owl:hasValue qk:RelativeHumidity ;
       owl:onProperty sosa:observes ;
     ] ;
   rdfs:subClassOf [
@@ -69,7 +70,7 @@ sensor:IBS-TH2-Plus-T
   rdfs:subClassOf sosa:Sensor ;
   rdfs:subClassOf [
       a owl:Restriction ;
-      owl:hasValue <http://qudt.org/vocab/quantitykind/Temperature> ;
+      owl:hasValue qk:Temperature ;
       owl:onProperty sosa:observes ;
     ] ;
   rdfs:subClassOf [

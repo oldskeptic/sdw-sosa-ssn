@@ -1,6 +1,7 @@
 @prefix ex: <https://example.org/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix qk: <http://qudt.org/vocab/quantitykind/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
@@ -33,11 +34,11 @@ ex:12gth456a-23190 a sensor:IBS-TH2-Plus ;
 . 
 
 ex:12gth456a-23190-H a sensor:IBS-TH2-Plus-H ; 
-  sosa:observes <http://qudt.org/vocab/quantitykind/RelativeHumidity> ;
+  sosa:observes qk:RelativeHumidity ;
   system:hasSystemCapability sensor:IBS-TH2-Plus-H-systemCapability ;
 . 
 
 ex:12gth456a-23190-T a sensor:IBS-TH2-Plus-T ; 
-  sosa:observes <http://qudt.org/vocab/quantitykind/Temperature> ;
+  sosa:observes qk:Temperature ;
   system:hasSystemCapability sensor:IBS-TH2-Plus-T-systemCapability ;
 . 
