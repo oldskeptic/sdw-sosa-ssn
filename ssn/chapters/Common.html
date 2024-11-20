@@ -1541,18 +1541,23 @@
                 (i.e. <a href="#SOSAActuation">Actuation</a>
                 or <a href="#SOSAObservation">Observation</a> or act of <a href="#SOSASampling">Sampling</a>) to its
                 result or <a href="#SOSASample">Sample</a>.
-
+                <br><br>
                 In the case of an <a href="#SOSAActuation">Actuation</a>, the result is the expected value
                 of the <a href="#SOSAProperty">Property</a> following the execution of
                 the <a href="#SOSAProcedure">Procedure</a> by the <a href="#SOSAActuator">Actuator</a>.
-
+                <br><br>
                 In the case of an <a href="#SOSAObservation">Observation</a>, the result is the value of
                 the <a href="#SOSAProperty">Property</a> produced by the execution of
                 the <a href="#SOSAProcedure">Procedure</a> by the <a href="#SOSASensor">Sensor</a>.
-
+                <br><br>
                 In the case of a <a href="#SOSASampling">Sampling</a>, the result is the <a
                     href="#SOSASample">Sample</a> produced by the execution of the <a
                     href="#SOSAProcedure">Procedure</a> by the <a href="#SOSASampler">Sampler</a>.
+                <br><br>
+                An <a href="#SOSAExecution">Execution</a> has a single result, therefore <a
+                    href="#SOSAhasResult">sosa:hasResult</a> is <a
+                    href="https://www.w3.org/TR/owl2-syntax/#Functional_Object_Properties">Functional</a>.
+                <br><br>
             </span>
             <br>
             <table>
