@@ -539,6 +539,9 @@ sosa:System
 
   Individual system instances are members of this class or its sub-classes. 
   """@en ;
+  skos:scopeNote """
+  The association of a System (Actuator, Sensor, and Sampler) with a FeatureOfInterest is usually in the context of an Execution or a Deployment. 
+  """@en ;
   rdfs:isDefinedBy sosa-common: .
 
 sosa:deployedAsset 
