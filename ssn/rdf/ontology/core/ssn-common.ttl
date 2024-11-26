@@ -142,13 +142,7 @@ sosa:hasFeatureOfInterest
 sosa:hasInputValue 
   rdfs:isDefinedBy sosa-common: .
 
-sosa:hasOutputValue 
-  rdfs:isDefinedBy sosa-common: .
-
 sosa:hasResult 
-  rdfs:isDefinedBy sosa-common: .
-
-sosa:hasOutputValue 
   rdfs:isDefinedBy sosa-common: .
 
 sosa:hasSimpleResult 
@@ -162,9 +156,6 @@ sosa:inputValueForExecution
 
 sosa:isResultOf 
   a owl:InverseFunctionalProperty ;
-  rdfs:isDefinedBy sosa-common: .
-
-sosa:outputValueForExecution 
   rdfs:isDefinedBy sosa-common: .
 
 sosa:phenomenonOccurred 
