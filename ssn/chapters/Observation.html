@@ -10,7 +10,10 @@
         <figure>
             <a href="images/Observation.png"><img alt="Observation" src="images/Observation.png"></a>
             <figcaption>
-                Classes and relationships involved in Observation
+                Classes and relationships involved in Observation.
+                <br>
+                The result of an observation should be an information item of a type appropriate for the
+                observed-property (e.g. a number, quantity, category, image, vector, array, geometry etc.).
                 <br>
                 <em><a href="#class-diagram">Explanation of the notation used in class diagrams</a></em>.
             </figcaption>
@@ -1052,6 +1055,13 @@
         <p class="note">The 2017 edition defined the term ObservableProperty as the range of <a
                 href="#SOSAobservedProperty">sosa:observedProperty</a>.
             That specialization of <a href="#SOSAProperty">sosa:Property</a> is deprecated in this 2024 edition.
+        </p>
+        <p class="note">
+            'observed property' covers the concepts referred to in [[VIM]] as 'measurand' (quantitative values) and
+            'examinand' (categorical and nominal values - [[VIM4]]), as well as complex and structured properties whose
+            values may be represented as lists, vectors, arrays, rasters, geometries, etc.
+            More specific terms are used in other contexts for related concepts, such as 'analyte' (chemistry) and
+            'determinand' (water quality).
         </p>
 
         <em property="rdfs:label">observed property</em> -
