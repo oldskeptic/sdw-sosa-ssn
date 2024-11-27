@@ -315,10 +315,12 @@ sosa:hasProperty
 
 sosa:isFeatureOfInterestOf 
   schema:rangeIncludes sosa:Observation ;
+  schema:rangeIncludes sosa:ObservationCollection ;
   rdfs:isDefinedBy sosa-common: .
 
 sosa:isUltimateFeatureOfInterestOf 
   schema:rangeIncludes sosa:Observation ;
+  schema:rangeIncludes sosa:ObservationCollection ;
   rdfs:isDefinedBy sosa-common: .
 
 sosa:Property 
@@ -489,6 +491,7 @@ sosa:Deployment
   rdfs:isDefinedBy sosa-common: .
 
 sosa:deployedAsset 
+  schema:rangeIncludes sosa:Sensor ;
   rdfs:isDefinedBy sosa-common: .
 
 sosa:deployedSystem 

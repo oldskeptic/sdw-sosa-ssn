@@ -354,6 +354,7 @@ sosa:Deployment
   rdfs:isDefinedBy sosa-common: .
 
 sosa:deployedAsset 
+  schema:rangeIncludes sosa:Actuator ;
   rdfs:isDefinedBy sosa-common: .
 
 sosa:deployedSystem 
