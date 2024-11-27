@@ -144,6 +144,7 @@ sosa:hasInputValue
   rdfs:isDefinedBy sosa-common: .
 
 sosa:hasResult 
+  a owl:FunctionalProperty ;
   rdfs:isDefinedBy sosa-common: .
 
 sosa:hasSimpleResult 
@@ -156,7 +157,6 @@ sosa:inputValueForExecution
   rdfs:isDefinedBy sosa-common: .
 
 sosa:isResultOf 
-  a owl:InverseFunctionalProperty ;
   rdfs:isDefinedBy sosa-common: .
 
 sosa:phenomenonOccurred 
