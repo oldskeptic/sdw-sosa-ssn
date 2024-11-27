@@ -1228,9 +1228,9 @@
                 This term is non-normative, pending further implementation experience</p>
             <p>
                 <em property="rdfs:label">Execution Collection</em> -
-                <span property="skos:definition">Collection of one or more <a href="#SOSAExecution">Executions</a> or
-                    <a href="#SOSAExecutionCollection">ExecutionCollections</a>, i.e. collections may be
-                    nested.
+                <span property="skos:definition">Collection (set) of one or more <a href="#SOSAExecution">Executions</a>
+                    or
+                    <a href="#SOSAExecutionCollection">ExecutionCollections</a>, i.e. collections may be nested.
                     <br><br>
                     The following <a href="#SOSAExecution">Execution</a> properties may appear in an
                     <a href="#SOSAExecutionCollection">ExecutionCollection</a>:
@@ -1251,17 +1251,15 @@
                     <br><br>
                     2. Where an individual <a href="#SOSAExecutionCollection">ExecutionCollection</a> has
                     <i>a single value for a property</i>, each member <a href="#SOSAExecution">Execution</a> (direct or
-                    transitive) MUST have that same
-                    value
-                    for that property - i.e. the collection is homogeneous in that property.
+                    transitive) MUST have that same value for that property - i.e. the collection (set) is homogeneous
+                    in that property.
                     That property MAY then be omitted in any member <a href="#SOSAExecution">Execution</a>
                     or <a href="#SOSAExecutionCollection">ExecutionCollection</a>.
                     <br><br>
                     3. Where an individual <a href="#SOSAExecutionCollection">ExecutionCollection</a> has
                     <i>more than one value for a property</i>, each member <a href="#SOSAExecution">Execution</a>
-                    (direct or transitive) MUST have a value for
-                    that
-                    property that matches one of the values for the property in the collection.
+                    (direct or transitive) MUST have a value for that property that matches one of the values for the
+                    property in the collection.
                     <br><br>
                     4. Where an individual <a href="#SOSAExecutionCollection">ExecutionCollection</a>
                     <i>has a value for a property that is a range or interval</i>, each member <a
@@ -1274,8 +1272,8 @@
                     that property that matches or falls within one of those ranges or intervals.
                 </span>
                 <br>
-                <span property="skos:note">The members of a collection do not necessarily share a common value for any
-                    property. </span>
+                <span property="skos:note">The members of a collection (set) do not necessarily share a common value for
+                    any property. </span>
             </p>
             <table>
                 <tbody>
@@ -1291,9 +1289,8 @@
                                 executions and their properties.
 
                                 ExecutionCollection MUST be considered to be abstract, so any individual
-                                ExecutionCollection SHOULD be
-                                declared to be an instance of one of the concrete sub-classes, and not of the
-                                ExecutionCollection
+                                ExecutionCollection SHOULD be declared to be an instance of one of the concrete
+                                sub-classes, and not of the ExecutionCollection
                                 class. </span>
                         </td>
                     </tr>
@@ -3270,7 +3267,7 @@
             entity or population.
         </p>
         <p>
-            Collections that are useful for analysis will typically be homogeneous with respect to one or
+            Collections (sets) that are useful for analysis will typically be homogeneous with respect to one or
             more properties of the members.
             For example, a collection of observations of the same observed-property on
             the same feature of interest at a series of different times.
@@ -3283,7 +3280,7 @@
     <section class="informative" id="SSN-Collections">
         <h5>SSN collections</h5>
         <p>
-            The SSN Ontology supports the description of collections primarily through the provision of:
+            The SSN Ontology supports the description of collections (sets) primarily through the provision of:
         </p>
         <ol>
             <li>
