@@ -8,7 +8,7 @@
     </p>
     <p>
         There are several RDF serializations available.
-        The choice of RDF serialization is not prescribed by this specification.
+        The choice of RDF serialization is NOT prescribed by this specification.
         In this document, RDF fragments and examples are shown primarily using the compact Turtle notation
         [[rdf12-turtle]], with options for JSON-LD [[json-ld11]] in some places.
         OWL Restrictions are shown using the Manchester Syntax [[owl2-manchester-syntax]]
@@ -31,7 +31,7 @@
 
         <p>
             Module diagrams use a notation similar to UML Package Diagrams [[uml]], with folders for modules, and dashed
-            directed connectors for dependencies between them.
+            directed connectors for dependencies.
             However the module diagrams MUST NOT be interpreted according to strict UML rules.
         </p>
 
@@ -78,8 +78,9 @@
             SSN classes for most purposes.
             The associations shown in the diagrams match the soft axioms <code>schema:domainIncludes</code> and
             <code>schema:rangeIncludes</code> in the ontology.
-            However, in any diagram the associations and attributes are not exhaustive: other associations exist but are
-            not shown where their presence in the diagram would distract from the primary message.
+            However, in any diagram the associations and attributes are not exhaustive: other associations and
+            attributes exist but are not shown where their presence in the diagram would distract from the primary
+            message.
         </p>
     </section>
 </section>
