@@ -67,7 +67,7 @@ sosa:Actuator
   rdfs:isDefinedBy sosa-act: .
 
 sosa:actsOn 
-  rdfs:subPropertyOf ssn:forProperty ;
+  rdfs:subPropertyOf sosa:forProperty ;
   rdfs:isDefinedBy sosa-act: .
 
 sosa:actsOnProperty 
