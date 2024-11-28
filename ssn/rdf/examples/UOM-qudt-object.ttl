@@ -1,15 +1,11 @@
 @prefix ex: <http://www.w3.org/ns/sosa/examples#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix unit: <http://qudt.org/vocab/unit/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 ex:Obs234534
   a sosa:Observation ;
-  rdfs:comment "Observation of the temperature outside apartment #134."@en ;
   sosa:hasFeatureOfInterest ex:apt134 ;
   sosa:hasResult [
       a qudt:QuantityValue ;
@@ -19,17 +15,10 @@ ex:Obs234534
 .
 ex:Obs83985
   a sosa:Observation ;
-  rdfs:comment "Observation of the temperature inside apartment #134."@en ;
   sosa:hasFeatureOfInterest ex:apt134 ;
   sosa:hasResult [
       a qudt:QuantityValue ;
       qudt:hasUnit unit:DEG_C ;
       qudt:value 22.4 ;
     ] ;
-.
-ex:apt134
-  a sosa:FeatureOfInterest ;
-.
-unit:DEG_C
-  a qudt:Unit ;
 .

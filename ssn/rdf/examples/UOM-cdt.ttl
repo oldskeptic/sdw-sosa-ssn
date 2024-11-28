@@ -1,25 +1,10 @@
-# baseURI: file:///C:/dev/W3C/sdw-sosa-ssn/ssn/rdf/examples/UOM-cdt.ttl
-# imports: http://www.w3.org/ns/ssn/
-
 @prefix cdt: <http://w3id.org/lindt/custom_datatypes#> .
 @prefix ex: <http://www.w3.org/ns/sosa/examples#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix qudt: <http://qudt.org/schema/qudt/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
-@prefix unit: <http://qudt.org/vocab/unit/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<file:///C:/dev/W3C/sdw-sosa-ssn/ssn/rdf/examples/UOM-cdt.ttl>
-  a owl:Ontology ;
-  owl:imports <http://www.w3.org/ns/ssn/> ;
-.
 ex:Obs234534
   a sosa:Observation ;
   sosa:hasFeatureOfInterest ex:apt134 ;
   sosa:hasSimpleResult "-29.9 Cel"^^cdt:ucum ;
-.
-ex:apt134
-  a sosa:FeatureOfInterest ;
 .

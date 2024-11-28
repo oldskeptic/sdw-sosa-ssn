@@ -1,5 +1,4 @@
 @prefix ex: <http://www.w3.org/ns/sosa/examples#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -11,9 +10,6 @@ ex:Obs234534
   a sosa:Observation ;
   sosa:hasFeatureOfInterest ex:apt134 ;
   sosa:hasSimpleResult "-29.9"^^unit:DEG_C ;
-.
-ex:apt134
-  a sosa:FeatureOfInterest ;
 .
 unit:DEG_C
   a qudt:Unit ;
