@@ -63,8 +63,11 @@ sosa:isFeatureOfInterestOf
 sosa:Property
   owl:equivalentClass saref:Property .
 
-sosa:PropertyOfInterest
-  owl:equivalentClass saref:PropertyOfInterest .
+saref:PropertyOfInterest
+  rdfs:subPropertyOf sosa:Property ;
+  rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:isPropertyOf ; owl:cardinality "1"^^xsd:nonNegativeInteger ] ;
+  rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:isPropertyOf ; owl:allValuesFrom sosa:FeatureOfInterest ] ;
+.
 
 sosa:isPropertyOf
   rdfs:subPropertyOf saref:isPropertyOf .
