@@ -12,7 +12,7 @@
     <a href="https://doi.org/10.15497/RDA00071">I-ADOPT</a> may be used to define a new observable or actuatable
     property.
     The key point is that each individual property is denoted by a URI, which can be used as the value of the
-    <a href="#SOSAactuatableProperty"><code>sosa:actuatableProperty</code></a> or
+    <a href="#SOSAactsOnProperty"><code>sosa:actsOnProperty</code></a> or
     <a href="#SOSAobservedProperty"><code>sosa:observedProperty</code></a> of an Execution.
 </p>
 <p>
@@ -40,11 +40,11 @@
 <pre class="example" data-include="./rdf/examples/Temperature-of-interest-specialization.ttl"
     data-include-format="text"></pre>
 <p>
-    [[SAREF]] is closely aligned with [[SSN]] as <a href="#SAREF-alignment">documented in the alignments chapter</a>
+    [[SAREF]] is closely aligned with SSN as <a href="#SAREF-alignment">documented in the alignments chapter</a>
     so this may be used in SSN applications.
 </p>
 <p class="note">
-    For properties described as [[SKOS]] Concepts, such as in the <a
+    For properties described as SKOS Concepts [[[skos-primer]]], such as in the <a
         href="https://vocab.nerc.ac.uk/search_nvs/S06/">BODC parameter entity names</a> catalog, standard SKOS semantic
     relations may be useful,
     e.g. <a href="http://www.w3.org/2004/02/skos/core#broader"><code>skos:broader</code></a> to relate a specialized
