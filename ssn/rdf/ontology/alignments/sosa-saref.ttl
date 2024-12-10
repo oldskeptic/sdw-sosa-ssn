@@ -69,8 +69,11 @@ saref:PropertyOfInterest
   rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:isPropertyOf ; owl:allValuesFrom sosa:FeatureOfInterest ] ;
 .
 
-sosa:isPropertyOf
-  rdfs:subPropertyOf saref:isPropertyOf .
+saref:isPropertyOf
+  rdfs:subPropertyOf sosa:isPropertyOf .
+
+saref:isPropertyOfInterestOf
+  rdfs:subPropertyOf sosa:isPropertyOf .
 
 <http://www.w3.org/ns/sosa/saref#hasInput> a owl:ObjectProperty ;
   rdfs:label "has input"@en ;
