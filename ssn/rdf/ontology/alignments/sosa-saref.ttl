@@ -60,11 +60,11 @@ sosa:hasProperty
 sosa:isFeatureOfInterestOf
   rdfs:subPropertyOf saref:isActedUponBy . # may be renamed saref:isTargetOf in V4.1.1
 
-sosa:Property
-  owl:equivalentClass saref:Property .
+saref:Property
+  rdfs:subClassOf sosa:Property .
 
 saref:PropertyOfInterest
-  rdfs:subPropertyOf sosa:Property ;
+  rdfs:subClassOf sosa:Property ;
   rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:isPropertyOf ; owl:cardinality "1"^^xsd:nonNegativeInteger ] ;
   rdfs:subClassOf [ a owl:Restriction ; owl:onProperty sosa:isPropertyOf ; owl:allValuesFrom sosa:FeatureOfInterest ] ;
 .
