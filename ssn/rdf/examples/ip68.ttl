@@ -7,6 +7,7 @@
 @prefix unit: <http://qudt.org/vocab/unit/> .
 @prefix prov: <http://www.w3.org/ns/prov#>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix seas: <https://w3id.org/seas/>.
 @prefix cdt: <http://w3id.org/lindt/custom_datatypes#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -34,9 +35,9 @@
 
 <IP68_Outdoor_Temperature_Sensor#normalOperatingCondition> a schema:PropertyValue ;
   rdfs:comment "A temperature range of -20 to 70 Celsius."@en ;
-  schema:minValue -20.0 ;
-  schema:maxValue 70.0 ;
-  schema:unitCode unit:DegreeCelsius .
+  xsd:minInclusive -20.0 ;
+  xsd:maxInclusive 70.0 ;
+  qudt:unit unit:DegreeCelsius .
 
 <IP68_Outdoor_Temperature_Sensor#systemCapability> a sosa:Property , ssn-system:SystemCapability ;
   rdfs:comment "The sensor capability in normal operating conditions."@en ;
@@ -45,23 +46,23 @@
 
 <IP68_Outdoor_Temperature_Sensor#RFSensitivity> a sosa:Property , ssn-system:Sensitivity , schema:PropertyValue ;
   schema:value -137 ;
-  schema:unitCode unit:DecibelReferredToOneMilliwatt .
+  qudt:unit unit:DecibelReferredToOneMilliwatt .
 
 <IP68_Outdoor_Temperature_Sensor#TemperatureAccuracy> a sosa:Property , ssn-system:Accuracy , schema:PropertyValue ;
   sosa:forProperty <Air?lat=45.75&long=4.85#temperature> ;
-  schema:minValue -0.2 ;
-  schema:maxValue 0.2 ;
-  schema:unitCode unit:DegreeCelsius .
+  xsd:minInclusive -0.2 ;
+  xsd:maxInclusive 0.2 ;
+  qudt:unit unit:DegreeCelsius .
 
 <IP68_Outdoor_Temperature_Sensor#TemperatureResolution> a sosa:Property , ssn-system:Resolution , schema:PropertyValue ;
   sosa:forProperty <Air?lat=45.75&long=4.85#temperature> ;
   schema:value 0.0625 ;
-  schema:unitCode unit:DegreeCelsius .
+  qudt:unit unit:DegreeCelsius .
 
 <IP68_Outdoor_Temperature_Sensor#BatteryResolution> a sosa:Property , ssn-system:Resolution , schema:PropertyValue ;
   sosa:forProperty <Sensor/SL-T-P1#battery> ;
   schema:value 3.937e-3 ;
-  schema:unitCode unit:PERCENT .
+  qudt:unit unit:PERCENT .
 
 <Air?lat=45.75&long=4.85> a sosa:Sample ;
   rdfs:label "The air at lat 45.75 and long 4.85."@en ;
