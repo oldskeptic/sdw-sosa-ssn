@@ -539,9 +539,17 @@
         
         <h4>Recording survival and operating ranges for a sensor</h4>
         
-        <p>In this example we represent the capability of the platform's temperature sensor to measure ambient air and the physical
+        <p>In this example we represent the capability of the platform temperature sensor to measure ambient air and the physical
         survival limits of its plastic construction. Note that this should apply to the platform as well, but in SOSA/SSN survival ranges only
         apply to sensors and systems, not platforms.</p>
+
+        <p>xsd:minInclusive and xsd:maxInclusive are used to report the maximum and minimum operating and survival ranges for the
+        sensor.  These are simple properties that are not encoded here as ontological restrictions on observation results.  Besides the fact that these
+        ranges apply to the sensor type and not the sensor instance, it is often necessary to report
+        out-of-range values to record the occurance of an operating condition leading to failiure.  It should also be noted that
+        system lifespan can exceed the specification.  The Voyager 2 spacecraft is a well know example: designed to function for 5
+        years, it is still partially operational after 43 years.</p>
+
         <p>An RDF file containing a <a
             href="https://github.com/w3c/sdw/blob/gh-pages/sdw-sosa-ssn/ssn/rdf/examples/InkBird-IBS-TH2-Range.ttl">graph
             corresponding to this example is available</a>. </p>

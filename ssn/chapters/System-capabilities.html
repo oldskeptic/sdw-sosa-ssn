@@ -919,7 +919,9 @@
 
         <em property="rdfs:label">Range</em> -
         <span property="rdfs:comment skos:definition">A primitive class to represent that the value is within a numerical range.</span>
-        <p>The use of <code>schema:minValue</code> and <code>schema:maxValue</code> are suggested to record the bounds of the numerical range.</p>
+        <p>Both <code>xsd:minInclusive</code> and <code>xsd:maxInclusive</code> are used to record the upper and lower bound of
+        the range as simple properties. While SOSA/SSN only specifies the use of these properties to list bounding values, individual
+        implementations may add additional axioms to restrict observation values or deployment conditions.</p>
         <table>
             <tbody>
                 <tr>

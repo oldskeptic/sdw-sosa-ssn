@@ -54,8 +54,10 @@ ssn-system: a owl:Ontology , voaf:Vocabulary ;
 ssn-system:Range a owl:Class ;
 rdfs:label "Range"@en ;
 skos:definition "A primitive class to represent that the value is within a numerical range."@en ;
-skos:definition "A primitive class to represent that the value is within a numerical range."@en ;
 rdfs:isDefinedBy ssn-system: .
+
+xsd:minInclusive rdfs:domain ssn-system:Range .
+xsd:maxInclusive rdfs:domain ssn-system:Range .
 
 # Quality of Observation
 
